@@ -13,7 +13,7 @@ TECHNOLOGIES_CHOICES = (
 
 class Project(models.Model):
     title = models.CharField(max_length = 128)
-    description = models.CharField(max_length = 1024)
+    description = models.CharField(max_length = 1024, default="")
     live_site_url = models.CharField(max_length = 1024)
     git_repository_url = models.CharField(max_length = 1024)
     year = models.CharField(max_length = 4)
